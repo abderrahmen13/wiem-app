@@ -14,7 +14,7 @@ class DomaineCompetence extends Migration
     public function up()
     {
         Schema::create('domaine-competence', function (Blueprint $table) {
-            $table->id('id-comp');
+            $table->id();
             $table->text('label-comp');
             $table->date('date-creation-comp');
             $table->date('date-modification-comp');
